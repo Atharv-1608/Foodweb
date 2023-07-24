@@ -1,0 +1,32 @@
+{
+  "name": "namaste-react",
+  "version": "1.0.0",
+  "description": "package",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest",
+    "start": "parcel index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Atharv-1608/React-guide.git"
+  },
+  "author": "Atharv Deorukhkar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Atharv-1608/React-guide/issues"
+  },
+  "homepage": "https://github.com/Atharv-1608/React-guide#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "parcel": "^2.8.3",
+    "postcss": "^8.4.25",
+    "process": "^0.11.10",
+    "tailwindcss": "^3.3.2"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.13.0"
+  }
+}
