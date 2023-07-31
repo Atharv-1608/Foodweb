@@ -12,7 +12,6 @@ const onlineStatus = useOnlineStatus();
         <img className='logo w-[110px] mx-4 mt-1' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnIPmnIc4Clc85LfkLd36YoCEDNYsdHY9Odg" alt=""  />
         <nav className='nav-links '>
           <ul className="flex mr-8">
-            <li>{onlineStatus?'🍏 ':'🍎 '}</li>
             <li className="text-xl rounded-md p-6"><Link to="/">Home</Link></li>
             <li className="text-xl rounded-md p-6"><Link to="/about">About</Link></li>
             <li className="text-xl rounded-md p-6"><Link to="/contact">Contact</Link></li>

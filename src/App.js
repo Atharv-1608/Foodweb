@@ -42,7 +42,7 @@ const appRouter = createBrowserRouter([
         element:<Resmenu />
       }
     ],
-    errorElement:<Offlinepage />
+    errorElement:<Error />
   }  
 ])
   const root = ReactDOM.createRoot(document.getElementById("root"));
