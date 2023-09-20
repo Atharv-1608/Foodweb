@@ -9,14 +9,21 @@ import Contact from './components/Contact';
 import Error from './components/Error';
 import Resmenu from './components/Resmenu';
 import Offlinepage from './components/Offlinepage';
+import {Provider} from 'react-redux';
+import appStore from './utils/appStore';
+import Cart from './components/Cart';
+
 
 const contact = lazy(()=>import('./components/Contact'));
 
 const App = () => {
- return ( <>
+ return ( 
+  <Provider store={appStore}>
+  <>
    <Header />
    <Outlet />
   </>
+  </Provider>
  )
 }
 
@@ -40,6 +47,10 @@ const appRouter = createBrowserRouter([
       {
         path:"/restuarants/:resId",
         element:<Resmenu />
+      },
+      {
+        path:"/cart",
+        element:<Cart />
       }
     ],
     errorElement:<Error />

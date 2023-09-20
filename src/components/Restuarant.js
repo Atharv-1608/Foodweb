@@ -68,6 +68,7 @@ const Restuarant = () => {
 
           const filteredList = listOfResturant.filter((res) => res.info.avgRating > 4);
           setFilteredRestuarants(filteredList);
+          console.log(filteredRestaurants)
          
           
           
@@ -84,7 +85,6 @@ const Restuarant = () => {
        </Link>
           })}
       </div>
-      {console.log(filteredRestaurants)}
       </>
       
     )
